@@ -33,3 +33,11 @@ Dalam perhitungan NID dan Broadcast, disini digunakan dari IP terbesar terlebih 
 <img src="asset/NIDBroadcastVLSM.png">
 
 ## UML-CIDR
+
+Untuk tree CIDR dibuatkan seperti berikut ini:
+
+<img src="asset/treeCIDR.png">
+
+Dari hasil perhitungan NID dan Broadcast, didapatlah:
+
+<img src="asset/NIDBroadcastCIDR.png">
