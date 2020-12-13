@@ -181,11 +181,14 @@ iface eth2 inet static
 address 192.168.0.1
 netmask 255.255.248.0
 ```
+
 Pada PROBOLINGGO, routingnya sebagai berikut.
+
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.16.1
 ```
-- #BATU
+
+- BATU
 ```
 auto lo
 iface lo inet loopback
@@ -209,18 +212,19 @@ auto eth3
 iface eth3 inet static
 address 192.168.144.1
 netmask 255.255.254.0
+```
 
---
+Pada BATU, routingnya sebagai berikut.
 
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.160.1
 route add -net 192.168.146.0 netmask 255.255.255.240 gw 192.168.144.2
 route add -net 192.168.128.0 netmask 255.255.248.0 gw 192.168.136.2
 route add -net 10.151.79.108 netmask 255.255.255.252 gw 192.168.136.2
+```
 
---
-
-#KEDIRI
-
+- KEDIRI
+```
 auto lo
 iface lo inet loopback
 
@@ -238,16 +242,17 @@ auto eth2
 iface eth2 inet static
 address 10.151.79.109
 netmask 255.255.255.252
+```
 
---
+Pada KEDIRI, routingnya sebagai berikut.
 
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.136.1
 route add -net 192.168.128.0 netmask 255.255.252.0 gw 192.168.132.2
+```
 
---
-
-#MADIUN
-
+- MADIUN
+```
 auto lo
 iface lo inet loopback
 
@@ -260,15 +265,16 @@ auto eth1
 iface eth1 inet static
 address 192.168.146.1
 netmask 255.255.255.240
+```
 
---
+Pada MADIUN, routingnya sebagai berikut.
 
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.144.1
+```
 
---
-
-#BLITAR
-
+- BLITAR
+```
 auto lo
 iface lo inet loopback
 
@@ -281,16 +287,16 @@ auto eth1
 iface eth1 inet static
 address 192.168.128.1
 netmask 255.255.252.0
+```
 
--
-
+Pada BLITAR, routingnya sebagai berikut.
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.132.1
+```
 
--
-
---------------------
-#MALANG
-
+Untuk Server menggunakan IP dari DMZ sehingga konfigurasinya sebagai berikut.
+- MALANG
+```
 auto lo
 iface lo inet loopback
 
@@ -299,11 +305,10 @@ iface eth0 inet static
 address 10.151.79.110
 netmask 255.255.255.252
 gateway 10.151.79.109
+```
 
--
-
-#MOJOKERTO
-
+- MOJOKERTO
+```
 auto lo
 iface lo inet loopback
 
@@ -312,12 +317,12 @@ iface eth0 inet static
 address 10.151.79.106
 netmask 255.255.255.252
 gateway 10.151.79.105
+```
 
--
+Untuk client sebagai berikut.
 
---------------------
-#SAMPANG
-
+- SAMPANG
+```
 auto lo
 iface lo inet loopback
 
@@ -326,11 +331,10 @@ iface eth0 inet static
 address 192.168.192.2
 netmask 255.255.252.0
 gateway 192.168.192.1
+```
 
--
-
-#BONDOWOSO
-
+- BONDOWOSO
+```
 auto lo
 iface lo inet loopback
 
@@ -339,11 +343,10 @@ iface eth0 inet static
 address 192.168.8.2
 netmask 255.255.255.128
 gateway 192.168.8.1
+```
 
--
-
-#JEMBER
-
+- JEMBER
+```
 auto lo
 iface lo inet loopback
 
@@ -352,11 +355,10 @@ iface eth0 inet static
 address 192.168.4.1
 netmask 255.255.248.0
 gateway 192.168.0.1
+```
 
--
-
-#BANYUWANGI
-
+- BANYUWANGI
+```
 auto lo
 iface lo inet loopback
 
@@ -365,11 +367,10 @@ iface eth0 inet static
 address 192.168.0.2
 netmask 255.255.248.0
 gateway 192.168.0.1
+```
 
--
-
-#SIDOARJO
-
+- SIDOARJO
+```
 auto lo
 iface lo inet loopback
 
@@ -378,11 +379,10 @@ iface eth0 inet static
 address 192.168.32.2
 netmask 255.255.252.0
 gateway 192.168.32.1
+```
 
--
-
-#JOMBANG
-
+- JOMBANG
+```
 auto lo
 iface lo inet loopback
 
@@ -391,11 +391,10 @@ iface eth0 inet static
 address 192.168.144.3
 netmask 255.255.254.0
 gateway 192.168.144.1
+```
 
--
-
-#BOJONEGORO
-
+- BOJONEGORO
+```
 auto lo
 iface lo inet loopback
 
@@ -404,11 +403,10 @@ iface eth0 inet static
 address 192.168.146.2
 netmask 255.255.254.0
 gateway 192.168.146.1
+```
 
--
-
-#NGANJUK
-
+- NGANJUK
+```
 auto lo
 iface lo inet loopback
 
@@ -417,11 +415,10 @@ iface eth0 inet static
 address 192.168.148.2
 netmask 255.255.252.0
 gateway 192.168.148.1
+```
 
--
-
-#TULUNGAGUNG
-
+- TULUNGAGUNG
+```
 auto lo
 iface lo inet loopback
 
@@ -430,11 +427,10 @@ iface eth0 inet static
 address 192.168.128.2
 netmask 255.255.252.0
 gateway 192.168.128.1
+```
 
--
-
-#LUMAJANG
-
+- LUMAJANG
+```
 auto lo
 iface lo inet loopback
 
